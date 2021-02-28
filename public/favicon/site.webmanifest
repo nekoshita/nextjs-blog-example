@@ -1,0 +1,19 @@
+{
+    "name": "Nekoshita Yuki",
+    "short_name": "Nekoshita",
+    "icons": [
+        {
+            "src": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/unicorn-face_1f984.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/unicorn-face_1f984.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
