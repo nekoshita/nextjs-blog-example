@@ -4,7 +4,7 @@ import { ExactTheme } from "src/logic/styles";
 export function Profile() {
   const isBasicAuthEnabled =
     typeof process.env.ENABLE_BASIC_AUTH !== "undefined";
-
+  console.log(process.env.ENABLE_BASIC_AUTH);
   return (
     <Container>
       <h2>猫下ゆうき</h2>
