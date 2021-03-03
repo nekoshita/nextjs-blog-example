@@ -2,10 +2,17 @@ import styled from "@emotion/styled";
 import { ExactTheme } from "src/logic/styles";
 
 export function Profile() {
+  const isBasicAuthEnabled =
+    typeof process.env.ENABLE_BASIC_AUTH !== "undefined";
+  console.log(process.env.ENABLE_BASIC_AUTH);
   return (
     <Container>
       <h2>猫下ゆうき</h2>
       <p>環境変数{process.env.NODE_ENV}</p>
+      <p>
+        Basic認証を有効にする？
+        {isBasicAuthEnabled ? "TRUE" : "FALSE"}
+      </p>
       <p>フリーランスエンジニア・個人開発💻</p>
       <p>go言語、kubernetes、GCPが好きなバックエンドエンジニア</p>
       <p>
