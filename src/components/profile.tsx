@@ -5,6 +5,7 @@ export function Profile() {
   return (
     <Container>
       <h2>猫下ゆうき</h2>
+      <p>環境変数{process.env.NODE_ENV}</p>
       <p>フリーランスエンジニア・個人開発💻</p>
       <p>go言語、kubernetes、GCPが好きなバックエンドエンジニア</p>
       <p>
