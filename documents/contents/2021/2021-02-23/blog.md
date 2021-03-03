@@ -1,6 +1,6 @@
 ---
 slug: a-example-blog-2
-title: サンプルブログ2
+title: サンプルブログ200
 date: "2021-02-23"
 thunmailUrl: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/unicorn-face_1f984.png"
 ---
