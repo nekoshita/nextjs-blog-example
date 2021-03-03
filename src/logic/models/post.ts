@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs";
 import matter, { GrayMatterFile, Input } from "gray-matter";
-import { toDate, isAfter } from "date-fns";
+import { toDate, isAfter, parseISO } from "date-fns";
 
 const contentsPath = path.join("documents", "contents");
 
@@ -31,7 +31,9 @@ export function getPostAll(options: GetOptions = {}): Post[] {
       return post;
     })
     .sort((m1, m2) =>
-      isAfter(toDate(m1.data.date), toDate(m2.data.date)) ? 1 : -1
+      isAfter(toDate(parseISO(m1.data.date)), toDate(parseISO(m2.data.date)))
+        ? 1
+        : -1
     );
 
   return posts as Post[];
