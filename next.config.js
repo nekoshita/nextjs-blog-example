@@ -8,6 +8,7 @@ module.exports = withPlugins([
   {
     env: {
       ENABLE_BASIC_AUTH: process.env.ENABLE_BASIC_AUTH,
+      VERCEL_ENV: VERCEL_ENV,
     },
   },
 ]);
