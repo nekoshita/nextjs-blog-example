@@ -8,7 +8,8 @@ export function Profile() {
   return (
     <Container>
       <h2>猫下ゆうき</h2>
-      <p>環境変数{process.env.NODE_ENV}</p>
+      <p>NODE_ENV={process.env.NODE_ENV}</p>
+      <p>VERCEL_ENV={process.env.VERCEL_ENV}</p>
       <p>
         Basic認証を有効にする？
         {isBasicAuthEnabled ? "TRUE" : "FALSE"}
